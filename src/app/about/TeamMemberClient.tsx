@@ -61,6 +61,7 @@ export default function TeamMemberClient({ slug }: { slug: string }) {
                 alt={member.name}
                 fill
                 sizes="(max-width: 1024px) 100vw, 380px"
+                style={{ objectPosition: (member as any).objectPosition || "top" }}
                 className="object-cover"
               />
             </div>

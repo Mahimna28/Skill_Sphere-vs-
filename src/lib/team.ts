@@ -6,16 +6,16 @@ export const TEAM_MEMBERS = [
     socials: { github: "https://github.com/Mahimna28", linkedin: "https://linkedin.com/in/mahimna-mistry-8a7aa132" },
     img: "/images/team/mahimna1.jpg",
     slug: "mahimna-mistry",
-    position: "object-top",
+    objectPosition: "top",
   },
   {
     name: "Dolly Bavarva",
     role: "Co-Founder",
     bio: "Co-founder of Skill Sphere, passionate about building meaningful ed-tech solutions that empower learners and educators alike.",
     socials: { github: "https://github.com/Dollybavarva15", linkedin: "https://linkedin.com/in/dollybavarva/" },
-    img: "/images/team/dolly-final.jpeg",
+    img: "/images/team/dolly.jpeg",
     slug: "dolly-bavarva",
-    position: "object-[center_60%]",
+    objectPosition: "center 70%",
   },
 ];
 
@@ -39,6 +39,7 @@ export const TEAM_MEMBERS_DETAIL = [
     slug: "dolly-bavarva",
     role: "Co-Founder",
     img: "/images/team/dolly-final.jpeg",
+    objectPosition: "center 30%",
     socials: { github: "https://github.com/Dollybavarva15", linkedin: "https://linkedin.com/in/dollybavarva/" },
     fullBio: [
       "Dolly is the co-founder of Skill Sphere, driven by a passion for making quality education accessible to everyone.",
