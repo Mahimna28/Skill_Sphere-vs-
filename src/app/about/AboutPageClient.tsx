@@ -313,7 +313,7 @@ export default function AboutPageClient() {
               <Link href={`/about/team/${member.slug}`} className="block h-full group">
               <div className="bg-white rounded-[16px] overflow-hidden flex flex-col shadow-[0_4px_20px_rgba(30,27,46,0.04)] h-full group-hover:-translate-y-1 group-hover:shadow-[0_12px_32px_rgba(30,27,46,0.12)] transition-all duration-300">
                 <div className="w-full aspect-square relative overflow-hidden bg-[#1E1B2E]">
-                  <Image src={member.img} alt={member.name} fill sizes="(max-width: 768px) 100vw, 25vw" className="object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-500 ease-out" />
+                  <Image src={member.img} alt={member.name} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover object-[center_20%] grayscale group-hover:grayscale-0 transition-all duration-500 ease-out" />
                 </div>
                 <div className="p-7 flex flex-col flex-1 text-left">
                   <h3 className="font-heading text-[20px] text-[#1E1B2E] leading-none mb-[8px]">{member.name}</h3>

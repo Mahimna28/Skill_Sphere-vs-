@@ -118,14 +118,19 @@ export default function RegisterPage() {
         body: JSON.stringify({ ...formData, otpCode }),
       });
 
+      const contentType = res.headers.get("content-type") || "";
+      if (!contentType.includes("application/json")) {
+        throw new Error("Server returned an unexpected response. Please try again.");
+      }
+
       const data = await res.json();
       if (res.ok) {
         router.push(data.redirect);
       } else {
         setError(data.message || "Verification failed. Check the code.");
       }
-    } catch (err) {
-      setError("An error occurred during registration.");
+    } catch (err: any) {
+      setError(err.message || "An error occurred during registration.");
     } finally {
       setLoading(false);
     }
