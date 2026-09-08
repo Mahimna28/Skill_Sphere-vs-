@@ -7,8 +7,8 @@
   },
   "scripts": {
     "dev": "node --max-old-space-size=4096 server.js",
-    "build": "node prisma/set-postgres.js && npx prisma db push --accept-data-loss && next build",
-    "start": "node --max-old-space-size=4096 server.js",
+    "build": "next build",
+    "start": "next start",
     "lint": "eslint",
     "seed": "node prisma/seed.js",
     "postinstall": "npx prisma generate"
