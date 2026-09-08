@@ -307,7 +307,7 @@ export default function AboutPageClient() {
           <h2 className="font-heading text-[36px] text-[#1E1B2E]">Meet the Team</h2>
         </FadeIn>
 
-        <StaggerContainer staggerDelay={getStaggerDelay(0.15)} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[24px] mt-[40px]">
+        <StaggerContainer staggerDelay={getStaggerDelay(0.15)} className="grid grid-cols-1 md:grid-cols-2 gap-[24px] mt-[40px] max-w-3xl mx-auto w-full">
           {TEAM_MEMBERS.map((member, i) => (
             <StaggerItem key={i}>
               <Link href={`/about/team/${member.slug}`} className="block h-full group">

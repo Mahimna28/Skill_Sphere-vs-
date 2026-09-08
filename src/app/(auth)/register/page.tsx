@@ -326,7 +326,7 @@ export default function RegisterPage() {
 
               <div className="flex gap-3">
                 <Button variant="ghost" onClick={() => setStep("account")} className="text-[#8E8E93] hover:text-[#1E1B2E]">Back</Button>
-                <button 
+                <motion.button 
                   type="button" onClick={goToDetails}
                   disabled={!formData.role}
                   whileHover={formData.role ? { scale: 1.01 } : {}}
@@ -336,7 +336,7 @@ export default function RegisterPage() {
                   }`}
                 >
                   Continue
-                </button>
+                </motion.button>
               </div>
             </div>
           )}
