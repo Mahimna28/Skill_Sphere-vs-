@@ -15,7 +15,7 @@ export const TEAM_MEMBERS = [
     socials: { github: "https://github.com/Dollybavarva15", linkedin: "https://linkedin.com/in/dollybavarva/" },
     img: "/images/team/dolly-final.jpeg",
     slug: "dolly-bavarva",
-    position: "object-[center_70%]",
+    position: "object-[center_60%]",
   },
 ];
 
